@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170804183132) do
+ActiveRecord::Schema.define(version: 20170810001455) do
 
 # Could not dump table "posts" because of following StandardError
 #   Unknown type 'attachment' for column 'image'
