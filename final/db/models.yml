@@ -50,6 +50,10 @@ Post
     description: string
     created_at: datetime
     updated_at: datetime
+    image_file_name: text
+    image_content_type: text
+    image_file_size: integer
+    image_updated_at: text
     
 User
     name: text
@@ -57,3 +61,7 @@ User
     password_digest: text
     created_at: text
     updated_at: text
+    
+Like
+    user_id: integer
+    post_id: integer

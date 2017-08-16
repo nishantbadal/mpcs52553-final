@@ -1,16 +1,9 @@
-
 <div class = "row">
     <div class = "col-md-4">
     </div>
-<div class = "col-md-4 text-center">
-    <% if !flash.empty? %>
-            <div class="alert alert-info">
-                <%= flash[:notice] %>
-            </div>
-        <% end %>
-    <h2>Your Posts</h2>
-    
-    <% @posts.each do |post| %>
+    <div class = "col-md-4 text-center">
+    <h1><%= @userAccount.name %>'s Posts</h1>
+<% @posts.each do |post| %>
     <div style="border: thin solid gray">
     <p><strong><%= User.find(post.user_id).name %></strong></p>
         
@@ -28,7 +21,6 @@
     <%= link_to 'More...', '/posts/%{postId}' % {:postId => post.id}, :class => "btn", method: :get, class: 'btn btn-default navbar-btn' %>
     </div>
 <% end %>
-
     </div>
     <div class = "col-md-4">
     </div>
